@@ -22,6 +22,22 @@ FROM    ubuntu
 Run mkdir new_folder
 Run apt-get update && apt-get install -y apache2
 ```
+
+## 2nd dockerfile
+```
+FROM    ubuntu
+Run mkdir new_folder
+Run apt-get update && apt-get install -y apache2
+Run apt-get tree
+Run apt-get openssh-server
+```
+##3rd dockerfile
+```
+FROM    ubuntu
+Run mkdir new_folder
+Run apt-get update && apt-get install -y apache2 tree openssh-server python
+```
+
 ### How to build image from dockerfile
 ```
 docker image build -t alo:1.1 .
