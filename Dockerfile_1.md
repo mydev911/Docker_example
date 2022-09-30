@@ -20,14 +20,20 @@ vim Dockerfile -f <dockerfile_name>
 ```
 FROM    ubuntu
 Run mkdir new_folder
+Run apt-get update && apt-get install -y apache2
 ```
 ### How to build image from dockerfile
 ```
-docker image build -t taggg:1.1 .
+docker image build -t alo:1.1 .
 ```
-#taggg is tag or name of image and 1.1 is version  .= current path  
+#alo is tag or name of image and 1.1 is version  .= current path  
 
 #### Check image is create or not
 ```
 docker lmage ls
 '``
+#### Create container form image
+```
+docker container run -it
+```
+
