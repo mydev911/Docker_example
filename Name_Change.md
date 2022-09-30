@@ -26,3 +26,12 @@ docker container attach
 ```
 docker container pause 
 ```
+## How to add tag 
+
+```
+docker tag <Containd_id_name> <tag_name>
+```
+## How to push image to docker hub
+```
+docker image push hub.docker.com <image _id / rep>
+```
