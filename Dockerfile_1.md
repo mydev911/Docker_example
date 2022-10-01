@@ -33,6 +33,7 @@ Run apt-get openssh-server
 ```
 ##3rd dockerfile
 ```
+
 FROM    ubuntu
 Run mkdir new_folder
 Run apt-get update && apt-get install -y apache2 tree openssh-server python
@@ -52,4 +53,6 @@ docker lmage ls
 ```
 docker container run -it
 ```
+
+
 
