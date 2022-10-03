@@ -55,4 +55,7 @@ docker lmage ls
 ```
 docker container run -it --name interactive_alo alo:1
 ```
+```
+docker ps
+```
 
