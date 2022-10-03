@@ -50,9 +50,9 @@ docker image build -t alo:1.1 .
 #### Check image is create or not
 ```
 docker lmage ls
-'``
+```
 #### Create container form image
 ```
-docker container run -it
+docker container run -it --name interactive_alo alo:1
 ```
 
