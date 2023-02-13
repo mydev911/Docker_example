@@ -1,3 +1,15 @@
+### Docker volume
+#### Create a container NAMe mycontainer , image =ubuntu and Create a folder/volume =Swap and mount it with container 
+```
+docker run -it --name mycontainer -v swap:/swap ubuntu and attach this container with the volume Swap. (we create before)
+```
+#### Create a container NAME =allow , Image =ubuntu, 
+```
+docker run -it --name allow --volumes-from mycontainer ubuntu
+```
+
+
+
 #### Create volume on command
 ```
 docker run -it --name container3 -v /volume2 ubuntu /bin/bash
